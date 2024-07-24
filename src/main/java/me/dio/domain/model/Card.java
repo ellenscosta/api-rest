@@ -1,4 +1,4 @@
-package me.dio.model;
+package me.dio.domain.model;
 
 import java.math.BigDecimal;
 
@@ -21,28 +21,16 @@ public class Card {
 	@Column(name = "available_limit", precision = 2, scale = 13)
 	private BigDecimal limit;
 
-	public Long getId() {
-		return id;
-	}
+	public Long getId() { return id; }
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+	public void setId(Long id) { this.id = id; }
 
-	public String getNumber() {
-		return number;
-	}
+	public String getNumber() { return number; }
 
-	public void setNumber(String number) {
-		this.number = number;
-	}
+	public void setNumber(String number) { this.number = number; }
 
-	public BigDecimal getLimit() {
-		return limit;
-	}
+	public BigDecimal getLimit() { return limit; }
 
-	public void setLimit(BigDecimal limit) {
-		this.limit = limit;
-	}
+	public void setLimit(BigDecimal limit) { this.limit = limit; }
 	
 }
